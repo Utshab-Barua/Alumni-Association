@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <div className="hero h-[500px]" style={{ backgroundImage: 'url(https://i.ibb.co/Ldkx1LZ/alumni2.jpg)' }}>
+        <div className="hero h-[500px]" style={{ backgroundImage: 'url(https://2.bp.blogspot.com/-7V60XlapCOI/Uuk9sv7WJbI/AAAAAAAACrI/k7h5PR0XXfI/s1600/National+Institute+of+Business+Management+NSBM+University+SriLanka+Convocation.jpg)' }}>
             <div className="hero-overlay bg-black bg-opacity-70"></div>
             <div className="hero-content text-center text-white">
                 <div className="">

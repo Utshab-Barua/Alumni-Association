@@ -12,7 +12,7 @@ const StudentProfile = () => {
 
     const [axiosSecure] = useAxiosSecure();
     const { userInfo, refetch } = useProfile();
-    // console.log(userInfo);
+    console.log(userInfo);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");

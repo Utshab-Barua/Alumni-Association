@@ -28,7 +28,7 @@ const Events = () => {
 
 
 
-                            <div to="#" className="card-actions justify-end">
+                            <div className="card-actions justify-end">
                                 <button className="btn btn-primary" onClick={() => document.getElementById(event?._id).showModal()}>Show more!</button>
                             </div>
                         </div>
