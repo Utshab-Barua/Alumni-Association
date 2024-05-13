@@ -18,7 +18,7 @@ const News = () => {
                             <h2 className="card-title brandFont text-primary">{blog?.title}</h2>
                             <p className="font-bold">Posted By: <span className="text-primary">{blog?.author}</span></p>
                             <p className="text-sm font-semibold">{blog?.short_description?.length > 250 ? blog?.short_description?.slice(0, 250) : blog?.short_description}...</p>
-                            <Link to="/" className="card-actions justify-end">
+                            <Link to="/blog" className="card-actions justify-end">
                                 <button className="btn btn-primary">Read now!</button>
                             </Link>
                         </div>

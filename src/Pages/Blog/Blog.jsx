@@ -13,7 +13,7 @@ const Blog = () => {
 
 
 
-            <div className="px-5 lg:px-12 flex items-center justify-center gap-10 flex-col lg:flex-row">
+            <div className="px-5 lg:px-12 grid grid-cols-1 lg:grid-cols-4 gap-10 flex-col lg:flex-row">
 
                 {
                     allBlogs?.map(blog => <>
@@ -23,7 +23,7 @@ const Blog = () => {
                             <div className="card-body">
                                 <h2 className="card-title brandFont text-primary">{blog?.title}</h2>
                                 <p className="font-bold">Posted By: <span className="text-primary">{blog?.author}</span></p>
-                                <p className="text-sm font-semibold">{blog?.short_description}</p>
+                                <p className="text-sm font-semibold">{blog?.short_description?.length > 250 ? blog?.short_description?.slice(0, 250) : blog?.short_description}...</p>
                                 <div className="card-actions justify-end">
                                     <button className="btn btn-primary" onClick={() => document.getElementById(blog?._id).showModal()}>Show more!</button>
                                 </div>
